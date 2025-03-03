@@ -52,7 +52,7 @@ export function Home() {
           value={
             totalDonations !== null
               ? `د.أ ${totalDonations}`
-              : "جارٍ التحميل..."
+              : "3750JD"
           }
           footer={
             <Typography className="font-normal text-blue-gray-600">

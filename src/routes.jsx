@@ -3,11 +3,13 @@ import {
   UserCircleIcon,
   ChatBubbleLeftIcon,
   ArrowRightOnRectangleIcon,
-  ServerStackIcon, // More fitting icon for "Sign In"
+  ServerStackIcon,
+  UserGroupIcon, // New icon for "Beneficiary"
 } from "@heroicons/react/24/solid";
 import { Home, Profile, Tables, Notifications } from "@/pages/dashboard";
 import Users from "./pages/dashboard/users";
 import Message from "./pages/dashboard/message";
+import Beneficiary from "./pages/dashboard/Beneficiary";
 import { SignIn } from "@/pages/auth";
 
 const icon = { className: "w-5 h-5 text-inherit" };
@@ -27,6 +29,12 @@ export const routes = [
         name: "المستخدمون",
         path: "/users",
         element: <Users />,
+      },
+      {
+        icon: <UserGroupIcon {...icon} />, // Updated icon for "المستفيدين"
+        name: "المستفيدين",
+        path: "/beneficiary",
+        element: <Beneficiary />,
       },
       {
         icon: <ChatBubbleLeftIcon {...icon} />,
